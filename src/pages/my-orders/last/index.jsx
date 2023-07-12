@@ -18,7 +18,7 @@ const MyOrders = () => {
           </svg>
         </Link>
       </div>
-        {orders && orders.length > 0 ? orders.slice(-1)[0].products.map((product)=> (
+        {orders && orders.length > 0 && orders.slice(-1)[0] ?  orders.slice(-1)[0].products.map((product)=> (
           <OrderCard
             key={product.id} 
             title={product.title}
