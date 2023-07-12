@@ -22,8 +22,8 @@ const MyOrders = () => {
          return(
           <Link key={i} href={`/my-order/${orderItem.id}`}>
             <OrdersCard 
-              totalProducts={orderItem?.products} 
-              totalPrice={orderItem?.totalPrice} />
+              totalProducts={orderItem && orderItem.products} 
+              totalPrice={orderItem && orderItem.totalPrice} />
           </Link>
          ) 
         })
