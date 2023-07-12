@@ -10,6 +10,7 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'react/prop-types': 'off', // Desactivar la validación de props
     'react-refresh/only-export-components': 'warn',
   },
 }

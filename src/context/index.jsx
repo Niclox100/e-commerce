@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, createContext } from 'react'
 
 
-const appContext = React.createContext()
+const appContext = createContext()
 
 const AppContextProvider = ({children}) => {
   const [products, setProducts] = useState([])
