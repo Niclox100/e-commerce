@@ -18,12 +18,12 @@ const MyOrders = () => {
         </Link>
       </div>
       {
-        orders.map((orderItem, i) => {
+       orders && orders.map((orderItem, i) => {
          return(
           <Link key={i} href={`/my-order/${orderItem.id}`}>
             <OrdersCard 
-              totalProducts={orderItem && orderItem.products} 
-              totalPrice={orderItem && orderItem.totalPrice} />
+              totalProducts={orderItem.products} 
+              totalPrice={orderItem.totalPrice} />
           </Link>
          ) 
         })
