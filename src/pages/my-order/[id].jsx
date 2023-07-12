@@ -26,7 +26,7 @@ const MyOrder = () => {
         </Link>
       </div>
         {
-          currentOrder[0].products.map((product)=> (
+          currentOrder[0]?.products.map((product)=> (
             <OrderCard
               key={product.id} 
               title={product.title}
