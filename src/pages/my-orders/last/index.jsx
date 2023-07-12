@@ -29,7 +29,7 @@ const MyOrders = () => {
         )): <p className="text-center">There is no orders yet!</p>}
         <div className='flex justify-between items-center mt-6'>
           <span className='font-light text-xl'>Total:</span>
-          <span className='font-medium text-xl'>${orders?.slice(-1)[0].products?.reduce((prev, {price}) =>( price += prev), 0)}</span>
+          <span className='font-medium text-xl'>${orders.slice(-1)[0] && orders?.slice(-1)[0].products?.reduce((prev, {price}) =>( price += prev), 0)}</span>
         </div>
       </div>
   </>
