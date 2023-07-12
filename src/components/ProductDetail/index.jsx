@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import styles from './styles.module.css';
 import { appContext } from '../../context'
 

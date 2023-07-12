@@ -1,12 +1,10 @@
-import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 const appContext = React.createContext()
 
 const AppContextProvider = ({children}) => {
   const [products, setProducts] = useState([])
-  const [productsToShow, setProductsToShow] = useState([])
   const [searchedProductsInput, setSearchedProductsInput] = useState("")
   const [isDetailOpen, setIsDetailOpen] = useState(false)
   const [currentDetail, setCurrentDetail] = useState([])

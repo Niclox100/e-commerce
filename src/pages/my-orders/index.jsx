@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import Layout from '../../components/Layout'
+import { useContext } from 'react'
 import OrdersCard from '../../components/OrdersCard'
 import Link from 'next/link'
 import { appContext } from '../../context'
