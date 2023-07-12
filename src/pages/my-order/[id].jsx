@@ -38,7 +38,7 @@ const MyOrder = () => {
         }
         <div className='flex justify-between items-center mt-6'>
           <span className='font-light text-xl'>Total:</span>
-          <span className='font-medium text-xl'>{currentOrder[0].totalPrice}</span>
+          <span className='font-medium text-xl'>{currentOrder[0]?.totalPrice}</span>
         </div>
       </div>
   </>
