@@ -11,7 +11,6 @@ const AppContextProvider = ({children}) => {
   const [isCheckoutSideMenuOpen, setIsCheckoutSideMenuOpen] = useState(false)
   const [shoppingCart, setShoppingCart] = useState([])
   const [shoppingCartTotalPrice, setShoppingCartTotalPrice] = useState([])
-  const [categoryFilter, setCategoryFilter] = useState("")
   const [orders, setOrders] = useState([])
 
 

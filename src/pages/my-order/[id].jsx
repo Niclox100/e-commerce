@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { appContext } from '../../context'
 import Link from 'next/link';
 import { useRouter } from 'next/router';

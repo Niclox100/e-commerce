@@ -1,10 +1,6 @@
-import { useContext } from 'react'
-import { appContext } from '../../context'
 
 const OrdersCard = ({ totalProducts, totalPrice}) => {
 
-  const {removeProductFromCart} = useContext(appContext)
-  
   return (
     <div className="flex justify-between items-center mb-4 border border-black w-80 p-4 rounded-lg">
       <div>

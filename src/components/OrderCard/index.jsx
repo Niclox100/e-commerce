@@ -1,9 +1,5 @@
-import { useContext } from 'react'
-import { appContext } from '../../context'
 
-const OrderCard = ({ title, image, price, id, onClick}) => {
-
-  const {removeProductFromCart} = useContext(appContext)
+const OrderCard = ({ title, image, price, onClick}) => {
   
   return (
     <div className="flex justify-between items-center mb-3">
