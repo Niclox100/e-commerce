@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import styles from "./style.module.css"
 import Card from '../Card'
 import ProductDetail from '../ProductDetail'
 import CheckoutSideMenu from '../CheckoutSideMenu'
@@ -29,13 +30,13 @@ const renderProducts = (productsToRender) => {
   if(searchedProductsInput.length > 0) {
     if (searchedProducts.length > 0) {
       return(
-        <div className='grid gap-6 grid-cols-4 w-full max-w-screen-lg'>
+        <>
           {searchedProducts?.map(item=> (
           <div key={item.id}>
             <Card data={item}/>
           </div>
         ))}
-        </div>
+        </>
       )
     }
     else {
@@ -44,7 +45,7 @@ const renderProducts = (productsToRender) => {
   }
   else{
     return(
-      <div className='grid gap-6 grid-cols-4 w-full max-w-screen-lg'>
+      <>
         {
           searchedProducts?.map(item=> (
             <div key={item.id}>
@@ -52,7 +53,7 @@ const renderProducts = (productsToRender) => {
             </div>
           ))
         }
-      </div>
+      </>
     )
   }
 }
@@ -69,9 +70,11 @@ const renderProducts = (productsToRender) => {
         placeholder='Search a product'
         onChange={(event)=> setSearchedProductsInput(event.target.value)}
       />
+      <div className={`${styles.container}`}>
         {
          renderProducts(products)
         }
+        </div>
 
 
       <ProductDetail/>

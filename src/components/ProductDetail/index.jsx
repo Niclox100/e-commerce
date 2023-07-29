@@ -7,7 +7,7 @@ const ProductDetail = () => {
   const { isDetailOpen, closeProductDetail, currentDetail } = useContext(appContext)
 
   return (
-    <aside className={` ${styles['product-detail']} ${isDetailOpen ? "flex" : "hidden"} flex-col fixed right-0 rounded top-0 bg-white  border-black border`}>
+<aside className={`${styles['product-detail']} ${isDetailOpen ? `flex ${styles.animation}` : "hidden"} flex-col fixed right-0 rounded top-0 bg-white border-black border`}>
       <div className="flex justify-between items-center p-6">
         <h2 className='font-medium text-xl'>Detail</h2>
         <svg onClick={() => closeProductDetail()} style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

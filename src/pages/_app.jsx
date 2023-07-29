@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import { AppContextProvider } from "../context";
+import "./styles.css"
 import "./tailwind.css"
 
 function MyApp({ Component, pageProps }) {

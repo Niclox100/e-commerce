@@ -3,3 +3,12 @@
   height: calc(100vh - 68px);
   top: 68px;
 }
+
+.animation{
+  animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
